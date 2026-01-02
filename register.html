@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Belajar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <div class="logo">
+            <img
+              src="https://ik.imagekit.io/stpnd/Mission3A/logo%20videobelajar.png?tr:w-150,q-80"
+              alt="Logo Video Belajar"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main">
+        <div class="login-page">
+          <div>
+            <h2 class="masuk-akun">Pendaftaran Akun</h2>
+            <p class="masuk-desc">Yuk, daftarkan akunmu sekarang juga</p>
+          </div>
+          <form action="beranda.html" method="get">
+            <div class="input-group">
+              <input class="input-field" type="text" id="nama" required />
+              <label class="input-label" for="nama"
+                >Nama Lengkap <span class="req">*</span></label
+              >
+            </div>
+            <div class="input-group">
+              <input class="input-field" type="email" id="email" required />
+              <label class="input-label" for="email"
+                >E-Mail <span class="req">*</span></label
+              >
+            </div>
+
+            <div class="input-group">
+              <div class="input-wrapper">
+                <select class="country-code" aria-label="Country Code">
+                  <option value="+62" selected>+62</option>
+                  <option value="+1">+1</option>
+                </select>
+                <input class="input-field" type="tel" id="phone" required />
+                <label class="input-label" id="phone" for="phone"
+                  >No. Hp <span class="req">*</span></label
+                >
+              </div>
+            </div>
+            <div class="input-group">
+              <input
+                class="input-field"
+                type="password"
+                id="password"
+                required
+              />
+              <label class="input-label" for="password"
+                >Password <span class="req">*</span></label
+              >
+              <img
+                src="https://ik.imagekit.io/stpnd/Mission3A/logo%20mata.png"
+                alt="Show Password"
+                class="toggle-pass"
+                onclick="togglepasswordvisibilitywithimage()"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                class="input-field"
+                type="password"
+                id="re-password"
+                required
+              />
+              <label class="input-label" for="re-password"
+                >Konfirmasi Password <span class="req">*</span></label
+              >
+
+              <img
+                src="https://ik.imagekit.io/stpnd/Mission3A/logo%20mata.png"
+                alt="Show Password"
+                class="toggle-pass"
+                onclick="togglepasswordvisibilitywithimage()"
+              />
+            </div>
+            <div class="lupa-pass">
+              <a href="#">Lupa Password?</a>
+            </div>
+            <div class="input-button">
+              <button type="submit" class="button-daftar">Daftar</button>
+            </div>
+          </form>
+          <div class="input-button">
+            <a href="Login.html">
+              <button class="button-masuk">Masuk</button>
+            </a>
+          </div>
+          <p class="separator">atau</p>
+          <div class="input-button">
+            <a href="#">
+              <button class="button-google">
+                <img
+                  src="https://ik.imagekit.io/stpnd/Mission3A/logo%20google.png"
+                  alt="Logo Google"
+                  class="google-logo"
+                />Masuk dengan google
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
