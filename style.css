@@ -650,7 +650,7 @@
       }
 
       .footer-left p {
-        margin: 5px 0;
+        margin: 10px 0;
         color: rgb(77, 77, 77);
         
       }
@@ -716,10 +716,14 @@
         margin-top: 20px;
        }
 
-        footer {
-          padding: 0;
-          width: 100%;
-        }
+      footer {
+        padding: 0;
+        width: 100%;
+        min-width: 390px;
+        align-items: center;
+        margin: 50px auto 0 auto;
+        display: inline-block;
+       }
 
        .header-container {
         width: 90%;
